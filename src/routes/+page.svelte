@@ -19,7 +19,7 @@
                 {
                     name: "轻视频",
                     url: "https://kan.deoops.com",
-                    image: "https://kan.deoops.com/fav.svg",
+                    image: "https://kan.deoops.com/dist/fav.svg",
                     description: "海量电视，电影，综艺资源网站",
                     recommended: false,
                 },
@@ -31,7 +31,7 @@
                 {
                     name: "云猪下载",
                     url: "https://dl.deoops.com",
-                    imurl: "https://dl.deoops.com/fav.svg",
+                    image: "https://dl.deoops.com/fav.svg",
                     description: "云端的种子，磁力下载工具",
                     recommended: false,
                 },
@@ -43,7 +43,7 @@
                 {
                     name: "k8s管理工具",
                     url: "https://set-img.deoops.com",
-                    imurl: "https://set-img.deoops.com/fav.svg",
+                    image: "https://set-img.deoops.com/static/fav.svg",
                     description: "简单的kubernetes应用发布，更新工具",
                     recommended: false,
                 },

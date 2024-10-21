@@ -7,11 +7,18 @@
     <h2>{category}</h2>
     <div class="websites">
         {#each data as site}
-            <div class="website-card">
-                <img src={site.image} alt={site.name} />
+            <div
+                class="website-card"
+                style="background-image: url('{site.image}')"
+            >
                 <h3>{site.name}</h3>
                 <p>{site.description}</p>
-                <a href={site.url}>Visit Website</a>
+                <a href={site.url}>
+                    <div class="icon-text-link">
+                        <img src={site.image} alt="Website Icon" />
+                        <span> Visit The Website </span>
+                    </div></a
+                >
                 {#if site?.recommended}
                     <span class="recommend-badge">Recommended</span>
                 {/if}
@@ -46,16 +53,25 @@
         padding: 1rem;
         position: relative;
         transition: transform 0.3s ease;
+        background-size: cover; /* Make the background image cover the card */
+        background-position: center; /* Center the image */
+        min-height: 150px; /* Ensure a minimum height for the card */
+        color: #fff; /* Set text color for better contrast against the background */
     }
 
     .website-card:hover {
         transform: translateY(-5px);
     }
 
-    .website-card img {
-        max-width: 80px;
-        height: auto;
-        margin-bottom: 0.5rem;
+    .icon-text-link {
+        display: flex;
+        align-items: center;
+        img {
+            height: 32px;
+        }
+        span {
+            margin-left: 0.3rem;
+        }
     }
 
     .website-card h3 {
