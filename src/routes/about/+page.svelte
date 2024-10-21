@@ -8,6 +8,10 @@
     ];
 </script>
 
+<svelte:head>
+    <title>About me</title>
+</svelte:head>
+
 <main>
     <section class="about">
         <h1>About Me</h1>
@@ -22,7 +26,7 @@
             {/each}
         </ul>
         <p>
-            Currently, I’m focusing on building full-stack applications using <strong
+            Currently, I'm focusing on building full-stack applications using <strong
                 >Leptos</strong
             >
             and <strong>SvelteKit</strong>, exploring new ways to make web
@@ -33,17 +37,17 @@
 
 <style>
     main {
+        margin-top: 3rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: 100vh;
         padding: 20px;
         background-color: #f0f4f8;
         color: #333;
     }
 
     .about {
-        max-width: 600px;
+        max-width: 75vw;
         background-color: #fff;
         padding: 20px;
         border-radius: 8px;

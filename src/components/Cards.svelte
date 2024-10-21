@@ -33,6 +33,7 @@
     }
 
     .category h2 {
+        text-transform: capitalize;
         color: var(--secondary-color);
         border-bottom: 2px solid var(--secondary-color);
         padding-bottom: 0.5rem;
