@@ -67,7 +67,9 @@
 </svelte:head>
 
 <div class="body-container">
-    <h1>Website Navigation v2</h1>
+    <h1>
+        Welcome to <a href="/about">Fu's </a> Full-Stack Development & DevOps Studio
+    </h1>
     {#each data as card}
         <Cards category={card.category} data={card.data} />
     {/each}
@@ -103,6 +105,10 @@
         color: var(--primary-color);
         margin-bottom: 1.5rem;
         font-size: 1.5rem;
+    }
+
+    a {
+        text-decoration: none;
     }
 
     @media (min-width: 768px) {
