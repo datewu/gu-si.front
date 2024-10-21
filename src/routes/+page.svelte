@@ -1,4 +1,40 @@
 <script>
+    // let categories = [
+    //     "education",
+    //     "entertainment",
+    //     "productivity tools",
+    //     "others",
+    // ];
+    let data = {
+        education: [
+            {
+                name: "Khan Academy",
+                url: "https://www.khanacademy.org/",
+                image: "https://www.khanacademy.org/images/apple-touch-icon.png",
+                description: "Free online courses, lessons & practice",
+                recommended: true,
+            },
+        ],
+        entertainment: [
+            {
+                name: "YouTube",
+                url: "https://www.youtube.com/",
+                image: "https://www.youtube.com/yts/img/favicon_144-vfliLAfa.png",
+                description: "Video sharing platform",
+                recommended: false,
+            },
+        ],
+        "productivity tools": [
+            {
+                name: "Trello",
+                url: "https://trello.com/",
+                image: "https://www.flaticon.com/svg/static/icons/svg/2921",
+                description: "Collaborative task management tool",
+                recommended: false,
+            },
+        ],
+        others: [],
+    };
 </script>
 
 <h1>Website Navigation v2</h1>
@@ -60,7 +96,7 @@
 </div>
 
 <div class="category">
-    <h2>Tools</h2>
+    <h2>Productivity tools</h2>
     <div class="websites">
         <div class="website-card">
             <img src="/placeholder.svg?height=80&width=80" alt="Trello Logo" />
