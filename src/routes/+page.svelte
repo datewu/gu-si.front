@@ -68,7 +68,7 @@
 
 <div class="body-container">
     <h1>
-        Welcome to <a href="/about">Fu's </a> Full-Stack Development & DevOps Studio
+        <a href="/about">Fu's </a> Full-Stack Development & DevOps Studio
     </h1>
     {#each data as card}
         <Cards category={card.category} data={card.data} />
