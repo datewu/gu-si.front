@@ -13,7 +13,7 @@
             >
                 <h3>{site.name}</h3>
                 <p>{site.description}</p>
-                <a href={site.url}>
+                <a target="_blank" href={site.url}>
                     <div class="icon-text-link">
                         <img src={site.image} alt="Website Icon" />
                         <span> Visit The Website </span>

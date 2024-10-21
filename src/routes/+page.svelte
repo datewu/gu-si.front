@@ -73,6 +73,7 @@
     {#each data as card}
         <Cards category={card.category} data={card.data} />
     {/each}
+    <footer><a href="https://deoops.com"> ©fu </a> since 2006</footer>
 </div>
 
 <style>
@@ -119,5 +120,11 @@
         h1 {
             font-size: 2rem;
         }
+    }
+    footer {
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 0.8rem;
+        color: var(--text-muted);
     }
 </style>
