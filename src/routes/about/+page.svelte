@@ -15,6 +15,13 @@
 <main>
     <section class="about">
         <h1>About Me</h1>
+        <div class="image-container">
+            <img
+                class="life-image"
+                src="/life.webp"
+                alt="a cozy, balanced space blending work and family"
+            />
+        </div>
         <p>
             Hello! I'm {name}, a passionate full-stack developer with a strong
             background in backend and DevOps technologies.
@@ -44,6 +51,18 @@
         padding: 20px;
         background-color: #f0f4f8;
         color: #333;
+    }
+
+    .image-container {
+        width: 100%;
+        max-width: 1024px; /* Set the maximum width of the container */
+        margin: 0 auto; /* Center the container horizontally */
+    }
+
+    .life-image {
+        width: 100%;
+        height: auto;
+        max-width: 100%; /* Ensure the image doesn't exceed its container */
     }
 
     .about {
